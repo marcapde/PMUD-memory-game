@@ -2,7 +2,7 @@ function iniTable (n){
     a = randomSort(n);
     let content = "";
     for(let i=0; i<n; i++){
-        content += `<div class="item" onClick="showImage('card${i}')"><img id="card${i}" class="hidden" src="imgs/chess_12/${a[i]}.svg" alt="${i}" ></div>`;
+        content += `<div class="item" onClick="manageClick('card${i}')"><img id="card${i}" class="hidden" src="imgs/chess_12/${a[i]}.svg" alt="${i}" ></div>`;
     }
     document.getElementById("memContainer").innerHTML = content;
 }
