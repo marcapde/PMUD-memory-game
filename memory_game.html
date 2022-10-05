@@ -14,11 +14,24 @@
     <header>
         <div class="title"><h1>Enjoy the best memory ever</h1></div>
     </header>
-    <div class="start">
-        <button onClick="startGame();" id="btnStart" class="btnStart">
-            Start New Game
-        </button>
+    <div class="start_container">
+        <div class="start">
+            <button onClick="startGame(8);" id="btnStart" class="btnStart">
+                Start New Game (8)
+            </button>
+        </div>
+        <div class="start">
+            <button onClick="startGame(12);" id="btnStart" class="btnStart">
+                Start New Game (12)
+            </button>
+        </div>
+        <div class="start">
+            <button onClick="startGame(16);" id="btnStart" class="btnStart">
+                Start New Game (16)
+            </button>
+        </div>
     </div>
+
     <div id="memContainer" class="board"></div>
     <footer></footer>
 </body>

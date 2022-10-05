@@ -4,15 +4,12 @@ let pairs = [];
 function manageClick(imgId){
     if(document.getElementById(imgId).classList.contains("correct") || pairs.length ==2 || imgId == pairs[0]) return;
     pairs.push(imgId);
-    console.log(pairs.length);
-
     if (pairs.length<2){
         showImage(imgId);
     }else if(pairs.length == 2){   
         console.log(checkCorrect());        
         showImage(imgId);
     }
-
 }
 
 function checkCorrect(){
@@ -24,7 +21,6 @@ function checkCorrect(){
         img2.classList.add("correct");
         return true;
     }else return false;
-
 }
 
 function showImage(imgId) {    
@@ -45,6 +41,7 @@ function showImage(imgId) {
     else if(!keep) {
         card.classList.add("hidden");
     }
+    endGame(12);
 }
 function hideImage(imgId) {
     let card = document.getElementById(imgId)

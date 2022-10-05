@@ -1,8 +1,14 @@
 function iniTable (n){
     a = randomSort(n);
     let content = "";
+    let folder = "";
+    if (n==12){
+        folder = "chess_12";
+    }else if(n==16){
+        folder = "food_16";
+    }
     for(let i=0; i<n; i++){
-        content += `<div class="item" onClick="manageClick('card${i}')"><img id="card${i}" class="hidden" src="imgs/chess_12/${a[i]}.svg" alt="${i}" ></div>`;
+        content += `<div class="item" onClick="manageClick('card${i}')"><img id="card${i}" class="hidden" src="imgs/${folder}/${a[i]}.svg" alt="${i}" ></div>`;
     }
     document.getElementById("memContainer").innerHTML = content;
 }
