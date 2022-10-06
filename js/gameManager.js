@@ -1,6 +1,6 @@
 function startGame(n) {
     // document.getElementById("btnStart").remove();
-    document.getElementsByClassName("start_container")[0].style.top="-100vh";
+    document.getElementsByClassName("start_container")[0].style.top="-1000vh";
     iniTable(n);
 }
 function endGame(n) {
