@@ -27,6 +27,7 @@ function showImage(imgId) {
     let card = document.getElementById(imgId)
     let keep = card.classList.contains("correct");
     if (card.classList.contains("hidden")){
+        
         card.classList.remove("hidden");
         if(pairs.length==2){
             if(!keep){
